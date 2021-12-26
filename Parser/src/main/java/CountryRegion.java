@@ -7,10 +7,7 @@ public class CountryRegion {
         this.region = region;
     }
 
-    public String getCountry() {
-        return country;
-    }
-    public String getRegion() {
-        return region;
-    }
+    public String getCountry() { return country; }
+
+    public String getRegion() { return region; }
 }

@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CountryStat {
+public class CountryStatistic {
     private final List<CountryRegion> Regions;
     private final List<CountryRank> Ranks;
     private final List<CountryScores> Scores;
 
-    public CountryStat(Path path) {
+    public CountryStatistic(Path path) {
         var regions = new ArrayList<CountryRegion>();
         var ranks = new ArrayList<CountryRank>();
         var scores = new ArrayList<CountryScores>();
@@ -26,6 +26,7 @@ public class CountryStat {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         Regions = regions;
         Ranks = ranks;
         Scores = scores;
